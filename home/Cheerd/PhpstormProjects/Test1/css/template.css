@@ -1,0 +1,35 @@
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #004400;
+}
+
+li.menu {
+    float:left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li.menu a {
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li.menu a:hover {
+    background-color: #002200;
+}
+
+body {
+    background-color: #99FF99;
+}
+
+li.login {
+    float: right;
+}

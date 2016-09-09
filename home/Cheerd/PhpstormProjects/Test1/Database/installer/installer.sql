@@ -1,0 +1,3 @@
+CREATE TABLE IF NOT EXISTS item(id integer PRIMARY KEY AUTOINCREMENT NOT NULL, name varchar(40) NOT NULL, qty smallint NOT NULL CHECK(qty >= 0), image varchar(255) DEFAULT '', user_id integer, FOREIGN KEY(user_id) REFERENCES user(id));
+CREATE TABLE IF NOT EXISTS user(id integer PRIMARY KEY AUTOINCREMENT NOT NULL, name varchar(30) NOT NULL, password varchar(255) NOT NULL, admin boolean NOT NULL);
+CREATE TABLE IF NOT EXISTS token(user_id integer NOT NULL, value char(30));
